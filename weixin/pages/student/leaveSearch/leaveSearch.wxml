@@ -1,0 +1,5 @@
+<view wx:if="{{status===1}}" class="title">长按可撤销请假申请</view>
+<scroll-view scroll-x>
+<tables column="{{column}}" tabs="{{showList}}"
+bindpress="longPress"></tables>
+</scroll-view>

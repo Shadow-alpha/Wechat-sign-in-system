@@ -1,0 +1,3 @@
+
+<tables column="{{column}}" tabs="{{codeList}}"
+bindhandletap="checkQrcode"></tables>

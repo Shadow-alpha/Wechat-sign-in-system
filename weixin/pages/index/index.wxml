@@ -1,0 +1,15 @@
+<!--pages/first/first.wxml-->
+<view class="logo">
+    <image src="/image/index_logo.png"></image>
+</view>
+<view class="title">选择身份</view>
+<view class="desc">您将登陆的是：微信点名系统</view>
+<view class="login">
+    <button class="student" type="primary" bindtap="handleclick" data-identity="学生">学生登录</button>
+    <button class="teacher" type="primary" bindtap="handleclick" data-identity="教师">教师登录</button>
+</view>
+<view class="check">
+    <checkbox checked="{{ischecked}}" bindtap="handlecheck"></checkbox>
+    <text>我已阅读并同意</text>
+    <navigator>《微信点名系统说明》</navigator>
+</view>

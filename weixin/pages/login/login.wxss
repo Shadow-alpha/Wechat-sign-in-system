@@ -1,0 +1,74 @@
+/* 顶部图标 */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo image {
+    width: 300rpx;
+    height: 300rpx;
+}
+
+.logo text {
+    font-size: 50rpx;
+    color: #0e419c;
+    font-weight: 600;
+    margin: 20rpx 0;
+}
+
+.identity {
+    margin: 20rpx 15rpx;
+    font-size: 30rpx;
+    color: rgb(255, 187, 0);
+}
+
+/* 表单样式 */
+.login {
+    display: flex;
+    flex-direction: column;
+    height: 400rpx;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login .section {
+    display: flex;
+    height: 100rpx;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.login .section image {
+    width: 50rpx;
+    margin: 0 20rpx;
+}
+
+.section input {
+    flex: 1;
+}
+
+.login button {
+    color: #fff;
+    font-weight: 400;
+    background-color: #0078d4;
+    margin-top: 50rpx;
+}
+
+/* 提示信息 */
+.prompt {
+    margin-top: 20rpx;
+}
+
+.prompt icon {
+    vertical-align: top;
+    height: 30rpx;
+    margin-right: 10rpx;
+}
+
+.prompt text {
+    font-size: 25rpx;
+    line-height: 30rpx;
+    color: red;
+}

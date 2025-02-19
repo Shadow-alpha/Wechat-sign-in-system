@@ -1,0 +1,20 @@
+<!--pages/student/leaveForm/leaveForm.wxml-->
+<view class="title">课程信息</view>
+<view class="row">
+    <view class="left">课程号</view>
+    <view class="right">{{classInfo.course_id}}</view>
+</view>
+<view class="row">
+    <view class="left">课程名</view>
+    <view class="right">{{classInfo.course_name}}</view>
+</view>
+<view class="row">
+    <view class="left">课次</view>
+    <view class="right">{{classInfo.class_num}}</view>
+</view>
+
+<view class="write">请填写请假理由：</view>
+<textarea class="text" value="{{reason}}" maxlength="200"
+bindinput="countLength"></textarea>
+<text class="wrapper">{{count+'/200字'}}</text>
+<button bindtap="tapSubmit">提交</button>

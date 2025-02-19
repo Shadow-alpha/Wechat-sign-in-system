@@ -1,0 +1,37 @@
+/* pages/teacher/leaveDecide/leaveDecide.wxss */
+.title{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 40rpx;
+    padding: 20rpx 0;
+    color: #3f51b5;
+}
+
+.row {
+    height: 50rpx;
+    border-bottom: 1px solid #ccc;
+    line-height: 50rpx;
+    padding: 0 10rpx;
+}
+
+.row .left{
+    float: left;
+    color: #bbb;
+}
+
+.row .right{
+    float: right;
+}
+.text{
+    width: 90%;
+    height: 300rpx;
+    padding: 10rpx;
+    border: 1px solid #777;
+    margin: 10rpx auto;
+    border-radius: 20rpx;
+}
+
+.btn{
+    display: flex;
+    margin-top: 20rpx;
+}

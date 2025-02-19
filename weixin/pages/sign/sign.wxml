@@ -1,0 +1,32 @@
+<!--pages/sign/sign.wxml-->
+<!-- 学生登录 -->
+<block wx:if="{{type}}">
+    <view class="title">选课列表</view>
+    <scroll-view class="table" scroll-y>
+        <tables column="{{columnList}}" tabs="{{courseList}}"
+        bindhandletap="studentInquire"></tables>
+    </scroll-view>
+    <view class="scan" bindtap="studentTap">
+        <image src="/image/scan_code.png"></image>
+        <text>扫码签到</text>
+        <view>{{testdata}}</view>
+    </view>
+</block>
+<!-- 老师登录 -->
+<block wx:else>
+    <view class="title">授课列表（点击可查看课程签到情况）</view>
+    <scroll-view class="table" scroll-y>
+        <tables column="{{columnList}}" tabs="{{courseList}}"
+        bindhandletap="teacherInquire"></tables>
+    </scroll-view>
+    <button bindtap="publishSign" 
+    style="margin:20rpx 0 ;color:#3f85ff">点我发起签到</button>
+    
+    <view class="title">点击可查看已发布二维码</view>
+    <scroll-view class="table" scroll-y>
+        <tables column="{{columnList}}" tabs="{{courseList}}"
+        bindhandletap="qrcodeInquire"></tables>
+    </scroll-view>
+</block>
+
+

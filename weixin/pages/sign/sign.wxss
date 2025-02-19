@@ -1,0 +1,27 @@
+/* pages/sign/sign.wxss */
+.title{
+    text-align: center;
+    font-weight: 800;
+}
+
+.table{
+    height: 400rpx;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10rpx;
+}
+
+/* 学生扫码部分 */
+.scan{
+    display: flex;
+    width: 250rpx;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10rpx 0;
+    background-color: #eee;
+}
+.scan image{
+    width: 200rpx;
+    height: 200rpx;
+    margin-bottom: 30rpx;
+}

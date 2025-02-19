@@ -1,0 +1,15 @@
+<!--components/tables/tables.wxml-->
+<view class="table-box">
+    <view class="table-head">
+        <view class="table-row">
+            <text wx:for="{{column}}" wx:key="*this">{{ item }}</text>
+        </view>
+    </view>
+    <view class="table-body">
+        <view bindlongpress="handleLongpress" bindtap="handleTap" class="table-row" wx:for="{{tabs}}" 
+        wx:for-item="item" wx:for-index="index" wx:key="id" data-index="{{index}}">
+            <text wx:for="{{item}}" 
+            wx:for-item="value" wx:for-index="key" wx:key="id">{{ value }}</text>
+        </view>
+    </view>
+</view>

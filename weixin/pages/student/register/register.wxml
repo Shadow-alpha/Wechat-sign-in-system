@@ -1,0 +1,4 @@
+<!--pages/student/register/register.wxml-->
+
+<tables column="{{column}}" tabs="{{registerList}}"> </tables>
+<view class="footer">~~这是最后一行啦</view>

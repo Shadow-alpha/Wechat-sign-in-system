@@ -1,0 +1,20 @@
+/* pages/leave/leave.wxss */
+.title{
+    font-weight: 800;
+}
+.subtitle{
+    text-align: center;
+}
+.table{
+    height: 350rpx;
+    margin-bottom: 50rpx;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    height: 300rpx;
+    justify-content: space-around;
+}
+.student{
+    height: 620rpx
+}

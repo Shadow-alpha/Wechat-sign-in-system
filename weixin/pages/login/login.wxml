@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<view class="logo">
+    <image src="/image/fdu_logo.png"></image>
+    <text user-select>统一身份认证</text>
+</view>
+<text class="identity">您选择的是：{{identity}}登录</text>
+<form class="login" bindsubmit="formSubmit">
+    <view class="section">
+        <image src="/image/account.png" mode="widthFix"></image>
+        <input name="id" placeholder="用户名（本人学工号）" />
+    </view>
+    <view class="section">
+        <image src="/image/password.png" mode="widthFix"></image>
+        <input name="password" placeholder="密码" password />
+    </view>
+    <view wx:if="{{isnull}}" class="prompt">
+        <icon type="warn"></icon>
+        <text>请输入值</text>
+    </view>
+    <view wx:elif="{{!islogin}}" class="prompt">
+        <icon type="warn"></icon>
+        <text>您输入的账号或密码有误</text>
+    </view>
+    <button style="width:650rpx" formType="submit">登陆</button>
+</form>

@@ -1,0 +1,44 @@
+<!--pages/teacher/leaveDecide/leaveDecide.wxml-->
+<view class="section">
+    <view class="title">课程信息</view>
+    <view class="row">
+        <view class="left">课程号</view>
+        <view class="right">{{leaveInfo.course_id}}</view>
+    </view>
+    <view class="row">
+        <view class="left">课程名</view>
+        <view class="right">{{leaveInfo.course_name}}</view>
+    </view>
+    <view class="row">
+        <view class="left">课次</view>
+        <view class="right">{{leaveInfo.class_num}}</view>
+    </view>
+</view>
+<view class="section">
+    <view class="title">学生信息</view>
+    <view class="row">
+        <view class="left">学号</view>
+        <view class="right">{{leaveInfo.stu_id}}</view>
+    </view>
+    <view class="row">
+        <view class="left">学生姓名</view>
+        <view class="right">{{leaveInfo.name}}</view>
+    </view>
+</view>
+<view class="section">
+    <view class="title">其它信息</view>
+    <view class="row">
+        <view class="left">请假时间</view>
+        <view class="right">{{leaveInfo.leave_time}}</view>
+    </view>
+    <textarea value="{{'请假理由：'+leaveInfo.reason}}" disabled class="text"></textarea>
+    <view class="row">
+        <view class="left">请假状态</view>
+        <view class="right">{{leaveInfo.leave_status}}</view>
+    </view>
+</view>
+<view class="btn" wx:if="{{isshow}}">
+    <button bindtap="leaveCheck" data-decision="1">通过</button>
+    <button bindtap="leaveCheck" data-decision="0">不通过</button>
+</view>
+

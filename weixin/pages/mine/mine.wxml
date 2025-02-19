@@ -1,0 +1,39 @@
+<!--pages/mine/mine.wxml-->
+<view class="title">基本信息</view>
+<!-- 学生 -->
+<block wx:if="{{type}}">
+    <view class="row">
+        <view class="left">学工号</view>
+        <view class="right">{{personInfo.stu_id}}</view>
+    </view>
+    <view class="row">
+        <view class="left">姓名</view>
+        <view class="right">{{personInfo.name}}</view>
+    </view>
+    <view class="row">
+        <view class="left">性别</view>
+        <view class="right">{{personInfo.gender}}</view>
+    </view>
+    <view class="row">
+        <view class="left">专业</view>
+        <view class="right">{{personInfo.profession}}</view>
+    </view>
+</block>
+
+<!-- 教师 -->
+<block wx:else>
+    <view class="row">
+        <view class="left">教工号</view>
+        <view class="right">{{personInfo.teacher_id}}</view>
+    </view>
+    <view class="row">
+        <view class="left">姓名</view>
+        <view class="right">{{personInfo.teacher_name}}</view>
+    </view>
+    <view class="row">
+        <view class="left">部门</view>
+        <view class="right">{{personInfo.department}}</view>
+    </view>
+</block>
+
+<view class="exit" bindtap="handleExit">退出登录</view>

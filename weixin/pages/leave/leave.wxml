@@ -1,0 +1,37 @@
+<!-- 学生登陆 -->
+<block wx:if="{{type}}">
+    <view class="title">缺勤记录（点击可提交申请）</view>
+    <scroll-view class="table student" scroll-y>
+        <tables column="{{column_absence}}" tabs="{{absenceList}}"
+        bindhandletap="leaveSubmit"></tables>
+    </scroll-view>
+
+    <view class="title">已提交记录</view>
+    <view class="btn">
+        <button data-type="1" bindtap="leaveSearch">待审核</button>
+        <button data-type="2" bindtap="leaveSearch">通过</button>
+        <button data-type="3" bindtap="leaveSearch">未通过</button>
+    </view>
+</block>
+<!-- 教师登陆 -->
+<block wx:else>
+    <view class="title">未审批记录（点击可进行审批）</view>
+    <scroll-view class="table" scroll-y scroll-x>
+        <tables column="{{column_teacher}}" tabs="{{pendingList}}"
+        bindhandletap="leaveDecideSee" data-num="0"></tables>
+    </scroll-view>
+    
+    <view class="title">已审批记录（点击可查看具体情况）</view>
+    <view class="subtitle">通过</view>
+    <scroll-view class="table" scroll-y scroll-x>
+        <tables column="{{column_teacher}}" tabs="{{solvedList}}"
+        bindhandletap="leaveDecideSee" data-num="1"></tables>
+    </scroll-view>
+
+    <view class="subtitle">不通过</view>
+    <scroll-view class="table" scroll-y scroll-x>
+        <tables column="{{column_teacher}}" tabs="{{passList}}"
+        bindhandletap="leaveDecideSee" data-num="2"></tables>
+    </scroll-view>
+
+</block>

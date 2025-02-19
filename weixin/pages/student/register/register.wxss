@@ -1,0 +1,8 @@
+/* pages/student/register/register.wxss */
+.footer{
+    font-size: 20rpx;
+    float: right;
+    color: #aaa;
+    margin-top: 10rpx;
+    margin-right: 10rpx;
+}

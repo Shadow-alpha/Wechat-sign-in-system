@@ -1,0 +1,31 @@
+<view class="qrcode">
+    <canvas style="width: 300px; height: 300px;margin:0 auto" 
+    canvas-id="sign"></canvas>
+</view>
+
+<form class="form">
+    <picker range="{{courseList}}" value="{{course_index}}"
+        range-key="course_id" bindchange="courseChange">
+        <view class="picker">
+            选择课程编号：{{courseList[course_index].course_id}}
+        </view>
+    </picker>
+    <picker mode="date" bindchange="dateChange" value="{{date}}">
+        <view class="picker">
+            选择签到日期：{{date}}
+        </view>
+    </picker>
+    <picker mode="time" bindchange="timeChange" data-type="start" 
+    value="{{start_time}}" end="{{latter}}">
+        <view class="picker">
+            选择开始时间：{{start_time}}
+        </view>
+    </picker>
+    <picker mode="time" bindchange="timeChange" data-type="end" 
+    value="{{end_time}}" start="{{former}}">
+        <view class="picker">
+            选择结束时间：{{end_time}}
+        </view>
+    </picker>
+    <button bindtap="formSubmit" disabled="{{!isabled}}">生成二维码</button>
+</form>

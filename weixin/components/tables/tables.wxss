@@ -1,0 +1,38 @@
+/* components/tables/tables.wxss */
+.table-box{
+    width: fit-content;
+    min-width: 100%;
+}
+.table-box .table-row {
+    display: flex;
+    min-height: 60rpx;
+    line-height: 50rpx;
+}
+
+.table-row text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2rpx solid #006cb2;
+    min-width: 180rpx;
+    overflow: auto;
+}
+
+.table-row text:nth-child(n+1) {
+    border-left: none;
+}
+
+.table-body text {
+    border-top: none;
+    user-select: all;
+    font-size: 25rpx;
+}
+
+.table-head text {
+    background-color: #c7dbff;
+}
+
+.table-body .table-row:nth-child(even) {
+    background-color: #ebebeb;
+}

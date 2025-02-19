@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "tables":"/components/tables/tables"
+    },
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark",
+    "backgroundColor": "#efefef"
+}

@@ -1,0 +1,45 @@
+<!--pages/teacher/codeCheck/codeCheck.wxml-->
+<view class="qrcode">
+    <canvas style="width: 300px; height: 300px;margin:0 auto" 
+    canvas-id="sign"></canvas>
+</view>
+<view class="info">
+    <view class="row">
+        <view class="left">课程号：</view>
+        <view class="right">
+            <input value="{{course_id}}" disabled/>
+        </view>
+    </view>
+    <view class="row">
+        <view class="left">课程名：</view>
+        <view class="right">
+            <input value="{{course_name}}" disabled/>
+        </view>
+    </view>
+    <view class="row">
+        <view class="left">课次：</view>
+        <view class="right">
+            <input value="{{info.class_num}}" disabled/>
+        </view>
+    </view>
+    <view class="row">
+        <view class="left">签到日期：</view>
+        <view class="right">
+            <input value="{{info.date}}" disabled/>
+        </view>
+    </view>
+    <view class="row">
+        <view class="left">开始时间：</view>
+        <view class="right">
+            <input value="{{info.start_time}}" disabled/>
+        </view>
+    </view>
+    <view class="row">
+        <view class="left">结束时间：</view>
+        <view class="right">
+            <input value="{{info.end_time}}" disabled/>
+        </view>
+    </view>
+</view>
+
+<button bindtap="tapRegret">撤销签到</button>
